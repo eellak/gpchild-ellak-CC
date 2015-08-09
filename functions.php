@@ -80,6 +80,7 @@ function ellak_social_links() { ?>
 		<ul class="social-links">
 			<li class="social-link-facebook"><a href="https://www.facebook.com/CreativeCommonsGreece" target="_blank"><span>Facebook</span></a></li>
 			<li class="social-link-twitter"><a href="https://www.twitter.com/cc_greece" target="_blank"><span>Twitter</span></a></li>
+			<li class="social-link-rss"><a href="https://ellak.gr/rss-feeds/" target="_blank"><span>RSS</span></a></li>
 		</ul>
 	</div><!-- .header-social-links -->
 <?php }
@@ -93,7 +94,9 @@ function ellak_credits() {
 		. __( 'Όροι Χρήσης & Δήλωση Απορρήτου', 'gpchild-ellak-opengov' ) . '</a> | '
 		. __( 'Άδεια χρήσης περιεχομένου:', 'gpchild-ellak' )
 		. ' <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.el">'
-		. __( 'CC-BY-SA', 'gpchild-ellak' ) . '</a>';
+		. __( 'CC-BY-SA', 'gpchild-ellak' ) . '</a> | '
+		. ' <a href="https://ellak.gr/stichia-epikinonias-chartis/">'
+		. __( 'Επικοινωνία', 'gpchild-ellak' ) . '</a>';
 }
 remove_filter( 'wprss_pagination', 'wprss_pagination_links' );
 ?>
