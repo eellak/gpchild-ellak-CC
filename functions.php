@@ -61,12 +61,35 @@ function ellak_slider() {
 // social links
 add_action( 'generate_before_header_content', 'ellak_social_links' );
 function ellak_social_links() { ?>
+<<<<<<< HEAD
 	<div class="header-social-links">
 		<ul class="social-links">
 			<li class="social-link-opinion"><a href="https://ellak.gr/pite-mas-ti-gnomi-sas/" title="Πείτε μας τη γνώμη σας" target="_blank"><span>Πείτε μας τη γνώμη σας</span></a></li>
 			<li class="social-link-facebook"><a href="https://www.facebook.com/CreativeCommonsGreece" title="Facebook" target="_blank"><span>Facebook</span></a></li>
 			<li class="social-link-twitter"><a href="https://www.twitter.com/cc_greece" title="Twitter" target="_blank"><span>Twitter</span></a></li>
 			<li class="social-link-rss"><a href="https://ellak.gr/rss-feeds/" title="RSS" target="_blank"><span>RSS</span></a></li>
+=======
+	<div class="header-login">
+				<?php if( is_user_logged_in() ): ?>
+				<a href="<?php echo esc_url( get_edit_user_link() ); ?>"><?php _e( 'Ο λογαριασμός μου', 'gpchild-ellak' ); ?></a>
+				<a href="<?php echo esc_url( wp_logout_url( get_permalink() ) ); ?>"><?php _e( 'Αποσύνδεση', 'gpchild-ellak' ); ?></a>
+
+				<?php else:
+
+					if( get_option( 'users_can_register' ) ): ?>
+				<a href="<?php echo esc_url( wp_registration_url() ); ?>"><?php _e( 'Εγγραφή', 'gpchild-ellak' ); ?></a>
+				<?php	endif; // get_option ?>
+
+				<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e( 'Συνδεση', 'gpchild-ellak' ); ?></a>
+
+				<?php endif; // is_user_logged_in ?>
+			</div>
+	<div class="header-social-links">
+		<ul class="social-links">
+			<li class="social-link-facebook"><a href="https://www.facebook.com/CreativeCommonsGreece" target="_blank"><span>Facebook</span></a></li>
+			<li class="social-link-twitter"><a href="https://www.twitter.com/cc_greece" target="_blank"><span>Twitter</span></a></li>
+			<li class="social-link-rss"><a href="https://ellak.gr/rss-feeds/" target="_blank"><span>RSS</span></a></li>
+>>>>>>> 527c336877d905853e633005c1afc3f2fc4e2231
 		</ul>
 	</div><!-- .header-social-links -->
 <?php }

@@ -68,6 +68,18 @@
 	font-weight: bold;
 }
 .header-login a:hover{
+/*=======
+	right: 1.5em;
+	margin-top: 40px;
+	padding: 0;
+	position: absolute;;
+}
+.site-header  .header-login a{
+	margin-right: 20px;
+	color: #0d72b2;
+}
+.site-header  .header-login a:hover{
+>>>>>>> 527c336877d905853e633005c1afc3f2fc4e2231*/
 	color: #3a3a3a;
 }
 /* Social links on header */
@@ -81,6 +93,9 @@
 	padding: 0;
 	font-family: FontAwesome;
 	font-size: 31px;
+/*=======
+	font-size: 24px;
+>>>>>>> 527c336877d905853e633005c1afc3f2fc4e2231*/
 }
 .social-links li {
 	float: left;
